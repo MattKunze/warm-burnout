@@ -135,6 +135,7 @@ Then switch themes via `Cmd+Shift+P` and typing "theme" to select **Warm Burnout
 - [Obsidian](https://community.obsidian.md/themes/warm-burnout)
 - [Emacs](https://github.com/felipefdl/warm-burnout/tree/main/emacs)
 - [OpenCode](https://github.com/felipefdl/warm-burnout/tree/main/opencode)
+- [Polytoken](https://github.com/felipefdl/warm-burnout/tree/main/polytoken)
 
 ## License
 

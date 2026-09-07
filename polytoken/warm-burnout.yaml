@@ -1,0 +1,722 @@
+# Warm Burnout
+# by Felipe Lima - https://warmburnout.com
+#
+# Ported from the canonical Warm Burnout palette (see AGENTS.md at the repo root).
+# Mostly warm, rarely blue. Every dark token is WCAG AAA against #1a1510.
+# UI surface colors match the VS Code and Ghostty variants (cards, status bar, selection).
+
+version: 1
+title: Warm Burnout
+palette:
+  dark:
+    text:
+      body: { rgb: "#bfbdb6" }       # Foreground
+      muted: { rgb: "#ada69c" }      # VS Code secondary UI foreground
+      dim: { rgb: "#8a8178" }        # Activity bar top foreground
+    surface:
+      app: { rgb: "#1a1510" }        # Canonical dark background
+      floating: { rgb: "#1f1d17" }   # VS Code editor widget background
+      card: { rgb: "#1f1d17" }
+      system_reminder: { rgb: "#1f1d17" }
+      status_bar: { rgb: "#14120f" } # VS Code sidebar/panel background
+      focus_ring: { rgb: "#33393a" } # Ghostty selection background
+      selection: { rgb: "#33393a" }  # Ghostty selection background
+      input: { rgb: "#14120f" }      # VS Code input background
+    semantic:
+      error: { rgb: "#f49090" }      # Canonical error/invalid
+      warning: { rgb: "#ffb454" }    # Canonical functions amber
+      success: { rgb: "#b4bc78" }    # Canonical strings sage
+      info: { rgb: "#90aec0" }       # Canonical type accent (the one cool color)
+    chrome:
+      accent: { rgb: "#ffb454" }     # Readable accent for text; #b8522e stays on badges/buttons
+      border: { rgb: "#26211c" }     # widget.border overlay composited over app background
+      expansion_indicator: { rgb: "#bfbdb6" }
+      detail_bar: { rgb: "#ada69c" }
+      facet: { rgb: "#e6c08a" }      # Canonical decorators
+      ask_user_question: { rgb: "#ec9878" } # Canonical member vars
+      subagent: { rgb: "#b4bc78" }   # Canonical strings
+      goal: { rgb: "#ffb454" }
+    reference:
+      resolved: { rgb: "#b4bc78" }
+      unresolved: { rgb: "#f49090" }
+    model_family:
+      claude: { rgb: "#ffb454" }
+      openai: { rgb: "#90aec0" }
+      gemini: { rgb: "#b4bc78" }
+      kimi: { rgb: "#ec9878" }
+      ollama: { rgb: "#e6c08a" }
+      glm: { rgb: "#f29668" }        # Canonical operators
+      deepseek: { rgb: "#90aec0" }
+      mimo: { rgb: "#ec9878" }
+      minimax: { rgb: "#ff8f40" }    # Canonical keywords
+      nvidia: { rgb: "#76B900" }     # NVIDIA brand green
+      unknown: { rgb: "#8a8178" }
+    diff:
+      added: { rgb: "#b4bc78" }
+      removed: { rgb: "#f49090" }
+      context: { rgb: "#ada69c" }
+      hunk_header: { rgb: "#e6c08a" }
+    syntax:
+      keyword: { rgb: "#ff8f40" }    # Bold per the three-tier font system
+      string: { rgb: "#b4bc78" }
+      comment: { rgb: "#b4a89c" }    # Italic per the three-tier font system
+      literal: { rgb: "#d4a8b8" }    # Canonical constants/numbers
+      type: { rgb: "#90aec0" }       # Italic; the single cool accent
+      function: { rgb: "#ffb454" }
+      operator: { rgb: "#f29668" }
+      number: { rgb: "#d4a8b8" }
+      punctuation: { rgb: "#ada69c" }
+    status_bar:
+      model: { rgb: "#bfbdb6" }
+      facet: { rgb: "#ff8f40" }
+      monitor: { rgb: "#b4bc78" }
+      monitor_bypass_plus: { rgb: "#ff8f40" }
+      label: { rgb: "#bfbdb6" }
+      dirty: { rgb: "#ffb454" }
+    sidebar:
+      pane_state_indicator: { rgb: "#ffb454" }
+    inline:
+      link: { rgb: "#ffb454" }
+      code: { rgb: "#90aec0" }
+    animation:
+      completion_flash: { rgb: "#2a2415" } # Warm amber tint over app background
+      error_pulse: { rgb: "#3a2222" }      # Warm red tint over app background
+    emphasis:
+      muted: { rgb: "#ada69c" }
+  light:
+    text:
+      body: { rgb: "#3a3630" }       # Canonical light foreground
+      muted: { rgb: "#5c5750" }      # VS Code light secondary UI foreground
+      dim: { rgb: "#a09888" }        # Light indent guide tone
+    surface:
+      app: { rgb: "#F5EDE0" }        # Canonical light background
+      floating: { rgb: "#F0E8DC" }   # VS Code light editor widget background
+      card: { rgb: "#F0E8DC" }
+      system_reminder: { rgb: "#F0E8DC" }
+      status_bar: { rgb: "#EDE6DA" } # VS Code light sidebar/panel background
+      focus_ring: { rgb: "#e5e8e2" } # Ghostty light selection background
+      selection: { rgb: "#e5e8e2" }  # Ghostty light selection background
+      input: { rgb: "#FAF6F0" }      # VS Code light input background
+    semantic:
+      error: { rgb: "#b03434" }      # Canonical light error
+      warning: { rgb: "#855700" }    # Canonical light functions
+      success: { rgb: "#4d5c1a" }    # Canonical light strings
+      info: { rgb: "#285464" }       # Canonical light type accent
+    chrome:
+      accent: { rgb: "#924800" }     # Readable accent for text; #b8522e stays on badges/buttons
+      border: { rgb: "#e8e1d5" }     # widget.border overlay composited over app background
+      expansion_indicator: { rgb: "#3a3630" }
+      detail_bar: { rgb: "#5c5750" }
+      facet: { rgb: "#7a5a1c" }      # Canonical light decorators
+      ask_user_question: { rgb: "#883850" } # Canonical light member vars
+      subagent: { rgb: "#4d5c1a" }   # Canonical light strings
+      goal: { rgb: "#855700" }
+    reference:
+      resolved: { rgb: "#4d5c1a" }
+      unresolved: { rgb: "#b03434" }
+    model_family:
+      claude: { rgb: "#924800" }
+      openai: { rgb: "#285464" }
+      gemini: { rgb: "#4d5c1a" }
+      kimi: { rgb: "#883850" }
+      ollama: { rgb: "#7a5a1c" }
+      glm: { rgb: "#8f4418" }        # Canonical light operators
+      deepseek: { rgb: "#285464" }
+      mimo: { rgb: "#883850" }
+      minimax: { rgb: "#924800" }    # Canonical light keywords
+      nvidia: { rgb: "#76B900" }     # NVIDIA brand green
+      unknown: { rgb: "#5c5750" }
+    diff:
+      added: { rgb: "#4d5c1a" }
+      removed: { rgb: "#b03434" }
+      context: { rgb: "#5c5750" }
+      hunk_header: { rgb: "#7a5a1c" }
+    syntax:
+      keyword: { rgb: "#924800" }    # Bold per the three-tier font system
+      string: { rgb: "#4d5c1a" }
+      comment: { rgb: "#544c40" }    # Italic; canonical light comments (AAA)
+      literal: { rgb: "#7e4060" }    # Canonical light constants
+      type: { rgb: "#285464" }       # Italic; the single cool accent
+      function: { rgb: "#855700" }
+      operator: { rgb: "#8f4418" }
+      number: { rgb: "#7e4060" }
+      punctuation: { rgb: "#3a3630" }
+    status_bar:
+      model: { rgb: "#3a3630" }
+      facet: { rgb: "#924800" }
+      monitor: { rgb: "#4d5c1a" }
+      monitor_bypass_plus: { rgb: "#924800" }
+      label: { rgb: "#3a3630" }
+      dirty: { rgb: "#855700" }
+    sidebar:
+      pane_state_indicator: { rgb: "#855700" }
+    inline:
+      link: { rgb: "#924800" }
+      code: { rgb: "#285464" }
+    animation:
+      completion_flash: { rgb: "#efe2c4" } # Warm amber tint over app background
+      error_pulse: { rgb: "#f2dbdb" }      # Warm red tint over app background
+    emphasis:
+      muted: { rgb: "#5c5750" }
+dark:
+  # Error messages and error-state indicators.
+  error:
+    fg:
+      $ref: "#/palette/dark/semantic/error"
+  # Warning messages and caution indicators.
+  warning:
+    fg:
+      $ref: "#/palette/dark/semantic/warning"
+  # Success confirmations and positive status indicators.
+  success:
+    fg:
+      $ref: "#/palette/dark/semantic/success"
+  # Informational messages and neutral status indicators.
+  info:
+    fg:
+      $ref: "#/palette/dark/semantic/info"
+  # Dimmed secondary text with reduced contrast.
+  dim:
+    fg:
+      $ref: "#/palette/dark/text/dim"
+  # Accent color for emphasized text and highlights.
+  accent:
+    fg:
+      $ref: "#/palette/dark/chrome/accent"
+    b: true
+  # Default body text foreground for all content.
+  body:
+    fg:
+      $ref: "#/palette/dark/text/body"
+  # Muted secondary text with lower emphasis than body text.
+  muted:
+    fg:
+      $ref: "#/palette/dark/text/muted"
+  # Border lines and separators between UI regions.
+  border:
+    fg:
+      $ref: "#/palette/dark/chrome/border"
+  # Background highlight for focused UI elements.
+  focus_ring:
+    bg:
+      $ref: "#/palette/dark/surface/focus_ring"
+  # Base application background behind all content.
+  app_background:
+    bg:
+      $ref: "#/palette/dark/surface/app"
+  # Background for floating windows, dialogs, and popups.
+  floating_window_background:
+    bg:
+      $ref: "#/palette/dark/surface/floating"
+  # Indicator glyph for expandable or collapsible cards.
+  expansion_indicator:
+    fg:
+      $ref: "#/palette/dark/chrome/expansion_indicator"
+    b: true
+  # Tool detail progress bar and secondary indicators.
+  tool_detail_bar:
+    fg:
+      $ref: "#/palette/dark/chrome/detail_bar"
+  # Background for user prompt message cards.
+  user_message_background:
+    bg:
+      $ref: "#/palette/dark/surface/input"
+  # Foreground for resolved file and reference completions.
+  prompt_reference_resolved:
+    fg:
+      $ref: "#/palette/dark/reference/resolved"
+  # Foreground for unresolved file and reference completions.
+  prompt_reference_unresolved:
+    fg:
+      $ref: "#/palette/dark/reference/unresolved"
+  # Background for system reminder cards.
+  system_reminder_background:
+    bg:
+      $ref: "#/palette/dark/surface/system_reminder"
+  # Background for assistant message cards.
+  assistant_message_background:
+    bg:
+      $ref: "#/palette/dark/surface/card"
+  # Accent color for facet cards and headers.
+  facet_chrome:
+    fg:
+      $ref: "#/palette/dark/chrome/facet"
+    b: true
+  # Accent color for ask-user-question cards and headers.
+  ask_user_question_chrome:
+    fg:
+      $ref: "#/palette/dark/chrome/ask_user_question"
+    b: true
+  # Accent color for subagent cards and headers.
+  subagent_chrome:
+    fg:
+      $ref: "#/palette/dark/chrome/subagent"
+    b: true
+  # Accent color for Claude-family models.
+  family_claude:
+    fg:
+      $ref: "#/palette/dark/model_family/claude"
+  # Accent color for OpenAI and GPT-family models.
+  family_openai:
+    fg:
+      $ref: "#/palette/dark/model_family/openai"
+  # Accent color for Gemini-family models.
+  family_gemini:
+    fg:
+      $ref: "#/palette/dark/model_family/gemini"
+  # Accent color for Kimi-family models.
+  family_kimi:
+    fg:
+      $ref: "#/palette/dark/model_family/kimi"
+  # Accent color for Ollama and Llama-family models.
+  family_ollama:
+    fg:
+      $ref: "#/palette/dark/model_family/ollama"
+  # Accent color for GLM-family models.
+  family_glm:
+    fg:
+      $ref: "#/palette/dark/model_family/glm"
+  # Accent color for DeepSeek-family models.
+  family_deepseek:
+    fg:
+      $ref: "#/palette/dark/model_family/deepseek"
+  # Accent color for MiMo-family models.
+  family_mimo:
+    fg:
+      $ref: "#/palette/dark/model_family/mimo"
+  # Accent color for MiniMax-family models.
+  family_minimax:
+    fg:
+      $ref: "#/palette/dark/model_family/minimax"
+  # Accent color for NVIDIA and Nemotron-family models.
+  family_nvidia:
+    fg:
+      $ref: "#/palette/dark/model_family/nvidia"
+  # Accent color for unrecognized or generic models.
+  family_unknown:
+    fg:
+      $ref: "#/palette/dark/model_family/unknown"
+  # Added lines in diff previews.
+  diff_added:
+    fg:
+      $ref: "#/palette/dark/diff/added"
+  # Removed lines in diff previews.
+  diff_removed:
+    fg:
+      $ref: "#/palette/dark/diff/removed"
+  # Unchanged context lines in diff previews.
+  diff_context:
+    fg:
+      $ref: "#/palette/dark/diff/context"
+  # Hunk header lines in diff previews.
+  diff_hunk_header:
+    fg:
+      $ref: "#/palette/dark/diff/hunk_header"
+    b: true
+  # Syntax highlighting for keywords in code blocks.
+  code_keyword:
+    fg:
+      $ref: "#/palette/dark/syntax/keyword"
+    b: true
+  # Syntax highlighting for string literals in code blocks.
+  code_string:
+    fg:
+      $ref: "#/palette/dark/syntax/string"
+  # Syntax highlighting for comments in code blocks.
+  code_comment:
+    fg:
+      $ref: "#/palette/dark/syntax/comment"
+    i: true
+  # Syntax highlighting for numeric and constant literals in code blocks.
+  code_literal:
+    fg:
+      $ref: "#/palette/dark/syntax/literal"
+  # Syntax highlighting for type names in code blocks.
+  code_type:
+    fg:
+      $ref: "#/palette/dark/syntax/type"
+    i: true
+  # Syntax highlighting for function names in code blocks.
+  code_function:
+    fg:
+      $ref: "#/palette/dark/syntax/function"
+  # Syntax highlighting for operators in code blocks.
+  code_operator:
+    fg:
+      $ref: "#/palette/dark/syntax/operator"
+  # Syntax highlighting for numeric values in code blocks.
+  code_number:
+    fg:
+      $ref: "#/palette/dark/syntax/number"
+  # Syntax highlighting for punctuation in code blocks.
+  code_punctuation:
+    fg:
+      $ref: "#/palette/dark/syntax/punctuation"
+  # Model name label in the status bar.
+  status_bar_model:
+    fg:
+      $ref: "#/palette/dark/status_bar/model"
+    b: true
+  # Facet name label in the status bar.
+  status_bar_facet:
+    fg:
+      $ref: "#/palette/dark/status_bar/facet"
+    b: true
+  # Permission monitor indicator in the status bar.
+  status_bar_monitor:
+    fg:
+      $ref: "#/palette/dark/status_bar/monitor"
+  # Bypass-plus monitor indicator in the status bar.
+  status_bar_monitor_bypass_plus:
+    fg:
+      $ref: "#/palette/dark/status_bar/monitor_bypass_plus"
+  # Static label text in the status bar.
+  status_bar_label:
+    fg:
+      $ref: "#/palette/dark/status_bar/label"
+    b: true
+  # Dirty/uncommitted-change indicator in the status bar.
+  status_bar_dirty:
+    fg:
+      $ref: "#/palette/dark/status_bar/dirty"
+  # Background fill for status bar regions.
+  status_bar_block:
+    bg:
+      $ref: "#/palette/dark/surface/status_bar"
+  # State indicator dot for sidebar panes.
+  sidebar_pane_state_indicator:
+    fg:
+      $ref: "#/palette/dark/sidebar/pane_state_indicator"
+    b: true
+  # Clickable hyperlink text in rendered markdown.
+  link:
+    fg:
+      $ref: "#/palette/dark/inline/link"
+    u: true
+  # Inline code spans in rendered markdown.
+  code_inline:
+    fg:
+      $ref: "#/palette/dark/inline/code"
+  # Background for selected cells in mouse drag selection and navigation.
+  selected:
+    bg:
+      $ref: "#/palette/dark/surface/selection"
+  # Background for selected text inside the prompt input area.
+  prompt_selection:
+    bg:
+      $ref: "#/palette/dark/surface/selection"
+  # Brief background flash when a turn completes.
+  completion_flash:
+    bg:
+      $ref: "#/palette/dark/animation/completion_flash"
+  # Background pulse animation for error states.
+  error_pulse:
+    bg:
+      $ref: "#/palette/dark/animation/error_pulse"
+  # Accent color for goal status card headers.
+  goal_accent:
+    fg:
+      $ref: "#/palette/dark/chrome/goal"
+    b: true
+  # Dimmed italic text for secondary annotations such as command aliases and theme source labels.
+  muted_emphasis:
+    fg:
+      $ref: "#/palette/dark/emphasis/muted"
+    i: true
+  # Dim reddish background tint for the prompt area in local command mode (`!`).
+  command_mode_background:
+    bg:
+      rgb: "#33201a"
+  # Brighter reddish background tint for the prompt area in shared command mode (`!!`).
+  command_mode_background_bright:
+    bg:
+      rgb: "#452a20"
+  # Dim blueish background tint for the prompt area in slash command mode (`/`).
+  slash_mode_background:
+    bg:
+      rgb: "#22282c"
+  # Blue foreground for the `/` trigger character and `Slash Mode` label in slash command mode.
+  slash_mode_foreground:
+    fg:
+      $ref: "#/palette/dark/semantic/info"
+light:
+  # Error messages and error-state indicators.
+  error:
+    fg:
+      $ref: "#/palette/light/semantic/error"
+  # Warning messages and caution indicators.
+  warning:
+    fg:
+      $ref: "#/palette/light/semantic/warning"
+  # Success confirmations and positive status indicators.
+  success:
+    fg:
+      $ref: "#/palette/light/semantic/success"
+  # Informational messages and neutral status indicators.
+  info:
+    fg:
+      $ref: "#/palette/light/semantic/info"
+  # Dimmed secondary text with reduced contrast.
+  dim:
+    fg:
+      $ref: "#/palette/light/text/dim"
+  # Accent color for emphasized text and highlights.
+  accent:
+    fg:
+      $ref: "#/palette/light/chrome/accent"
+    b: true
+  # Default body text foreground for all content.
+  body:
+    fg:
+      $ref: "#/palette/light/text/body"
+  # Muted secondary text with lower emphasis than body text.
+  muted:
+    fg:
+      $ref: "#/palette/light/text/muted"
+  # Border lines and separators between UI regions.
+  border:
+    fg:
+      $ref: "#/palette/light/chrome/border"
+  # Background highlight for focused UI elements.
+  focus_ring:
+    bg:
+      $ref: "#/palette/light/surface/focus_ring"
+  # Base application background behind all content.
+  app_background:
+    bg:
+      $ref: "#/palette/light/surface/app"
+  # Background for floating windows, dialogs, and popups.
+  floating_window_background:
+    bg:
+      $ref: "#/palette/light/surface/floating"
+  # Indicator glyph for expandable or collapsible cards.
+  expansion_indicator:
+    fg:
+      $ref: "#/palette/light/chrome/expansion_indicator"
+    b: true
+  # Tool detail progress bar and secondary indicators.
+  tool_detail_bar:
+    fg:
+      $ref: "#/palette/light/chrome/detail_bar"
+  # Background for user prompt message cards.
+  user_message_background:
+    bg:
+      $ref: "#/palette/light/surface/input"
+  # Foreground for resolved file and reference completions.
+  prompt_reference_resolved:
+    fg:
+      $ref: "#/palette/light/reference/resolved"
+  # Foreground for unresolved file and reference completions.
+  prompt_reference_unresolved:
+    fg:
+      $ref: "#/palette/light/reference/unresolved"
+  # Background for system reminder cards.
+  system_reminder_background:
+    bg:
+      $ref: "#/palette/light/surface/system_reminder"
+  # Background for assistant message cards.
+  assistant_message_background:
+    bg:
+      $ref: "#/palette/light/surface/card"
+  # Accent color for facet cards and headers.
+  facet_chrome:
+    fg:
+      $ref: "#/palette/light/chrome/facet"
+    b: true
+  # Accent color for ask-user-question cards and headers.
+  ask_user_question_chrome:
+    fg:
+      $ref: "#/palette/light/chrome/ask_user_question"
+    b: true
+  # Accent color for subagent cards and headers.
+  subagent_chrome:
+    fg:
+      $ref: "#/palette/light/chrome/subagent"
+    b: true
+  # Accent color for Claude-family models.
+  family_claude:
+    fg:
+      $ref: "#/palette/light/model_family/claude"
+  # Accent color for OpenAI and GPT-family models.
+  family_openai:
+    fg:
+      $ref: "#/palette/light/model_family/openai"
+  # Accent color for Gemini-family models.
+  family_gemini:
+    fg:
+      $ref: "#/palette/light/model_family/gemini"
+  # Accent color for Kimi-family models.
+  family_kimi:
+    fg:
+      $ref: "#/palette/light/model_family/kimi"
+  # Accent color for Ollama and Llama-family models.
+  family_ollama:
+    fg:
+      $ref: "#/palette/light/model_family/ollama"
+  # Accent color for GLM-family models.
+  family_glm:
+    fg:
+      $ref: "#/palette/light/model_family/glm"
+  # Accent color for DeepSeek-family models.
+  family_deepseek:
+    fg:
+      $ref: "#/palette/light/model_family/deepseek"
+  # Accent color for MiMo-family models.
+  family_mimo:
+    fg:
+      $ref: "#/palette/light/model_family/mimo"
+  # Accent color for MiniMax-family models.
+  family_minimax:
+    fg:
+      $ref: "#/palette/light/model_family/minimax"
+  # Accent color for NVIDIA and Nemotron-family models.
+  family_nvidia:
+    fg:
+      $ref: "#/palette/light/model_family/nvidia"
+  # Accent color for unrecognized or generic models.
+  family_unknown:
+    fg:
+      $ref: "#/palette/light/model_family/unknown"
+  # Added lines in diff previews.
+  diff_added:
+    fg:
+      $ref: "#/palette/light/diff/added"
+  # Removed lines in diff previews.
+  diff_removed:
+    fg:
+      $ref: "#/palette/light/diff/removed"
+  # Unchanged context lines in diff previews.
+  diff_context:
+    fg:
+      $ref: "#/palette/light/diff/context"
+  # Hunk header lines in diff previews.
+  diff_hunk_header:
+    fg:
+      $ref: "#/palette/light/diff/hunk_header"
+    b: true
+  # Syntax highlighting for keywords in code blocks.
+  code_keyword:
+    fg:
+      $ref: "#/palette/light/syntax/keyword"
+    b: true
+  # Syntax highlighting for string literals in code blocks.
+  code_string:
+    fg:
+      $ref: "#/palette/light/syntax/string"
+  # Syntax highlighting for comments in code blocks.
+  code_comment:
+    fg:
+      $ref: "#/palette/light/syntax/comment"
+    i: true
+  # Syntax highlighting for numeric and constant literals in code blocks.
+  code_literal:
+    fg:
+      $ref: "#/palette/light/syntax/literal"
+  # Syntax highlighting for type names in code blocks.
+  code_type:
+    fg:
+      $ref: "#/palette/light/syntax/type"
+    i: true
+  # Syntax highlighting for function names in code blocks.
+  code_function:
+    fg:
+      $ref: "#/palette/light/syntax/function"
+  # Syntax highlighting for operators in code blocks.
+  code_operator:
+    fg:
+      $ref: "#/palette/light/syntax/operator"
+  # Syntax highlighting for numeric values in code blocks.
+  code_number:
+    fg:
+      $ref: "#/palette/light/syntax/number"
+  # Syntax highlighting for punctuation in code blocks.
+  code_punctuation:
+    fg:
+      $ref: "#/palette/light/syntax/punctuation"
+  # Model name label in the status bar.
+  status_bar_model:
+    fg:
+      $ref: "#/palette/light/status_bar/model"
+    b: true
+  # Facet name label in the status bar.
+  status_bar_facet:
+    fg:
+      $ref: "#/palette/light/status_bar/facet"
+    b: true
+  # Permission monitor indicator in the status bar.
+  status_bar_monitor:
+    fg:
+      $ref: "#/palette/light/status_bar/monitor"
+  # Bypass-plus monitor indicator in the status bar.
+  status_bar_monitor_bypass_plus:
+    fg:
+      $ref: "#/palette/light/status_bar/monitor_bypass_plus"
+  # Static label text in the status bar.
+  status_bar_label:
+    fg:
+      $ref: "#/palette/light/status_bar/label"
+    b: true
+  # Dirty/uncommitted-change indicator in the status bar.
+  status_bar_dirty:
+    fg:
+      $ref: "#/palette/light/status_bar/dirty"
+  # Background fill for status bar regions.
+  status_bar_block:
+    bg:
+      $ref: "#/palette/light/surface/status_bar"
+  # State indicator dot for sidebar panes.
+  sidebar_pane_state_indicator:
+    fg:
+      $ref: "#/palette/light/sidebar/pane_state_indicator"
+    b: true
+  # Clickable hyperlink text in rendered markdown.
+  link:
+    fg:
+      $ref: "#/palette/light/inline/link"
+    u: true
+  # Inline code spans in rendered markdown.
+  code_inline:
+    fg:
+      $ref: "#/palette/light/inline/code"
+  # Background for selected cells in mouse drag selection and navigation.
+  selected:
+    bg:
+      $ref: "#/palette/light/surface/selection"
+  # Background for selected text inside the prompt input area.
+  prompt_selection:
+    bg:
+      $ref: "#/palette/light/surface/selection"
+  # Brief background flash when a turn completes.
+  completion_flash:
+    bg:
+      $ref: "#/palette/light/animation/completion_flash"
+  # Background pulse animation for error states.
+  error_pulse:
+    bg:
+      $ref: "#/palette/light/animation/error_pulse"
+  # Accent color for goal status card headers.
+  goal_accent:
+    fg:
+      $ref: "#/palette/light/chrome/goal"
+    b: true
+  # Dimmed italic text for secondary annotations such as command aliases and theme source labels.
+  muted_emphasis:
+    fg:
+      $ref: "#/palette/light/emphasis/muted"
+    i: true
+  # Dim reddish background tint for the prompt area in local command mode (`!`).
+  command_mode_background:
+    bg:
+      rgb: "#ecdcd2"
+  # Brighter reddish background tint for the prompt area in shared command mode (`!!`).
+  command_mode_background_bright:
+    bg:
+      rgb: "#e4c9bc"
+  # Dim blueish background tint for the prompt area in slash command mode (`/`).
+  slash_mode_background:
+    bg:
+      rgb: "#dde3e1"
+  # Blue foreground for the `/` trigger character and `Slash Mode` label in slash command mode.
+  slash_mode_foreground:
+    fg:
+      $ref: "#/palette/light/semantic/info"

@@ -146,6 +146,7 @@ Inspired by materials that age well. Unlike your eyes.
 | Obsidian | Available | [Community Themes](https://community.obsidian.md/themes/warm-burnout) |
 | Emacs | Available | [`emacs/`](emacs/) |
 | OpenCode | Available | [`opencode/`](opencode/) |
+| Polytoken | Available | [`polytoken/`](polytoken/) |
 
 Each platform lives in its own directory with its own README, build process, and release workflow.
 
