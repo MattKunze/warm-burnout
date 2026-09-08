@@ -204,6 +204,9 @@ jobs:
       - name: Package OpenCode
         run: cp opencode/warm-burnout.json warm-burnout-opencode.json
 
+      - name: Package Polytoken
+        run: cp polytoken/warm-burnout.yaml warm-burnout-polytoken.yaml
+
       - name: Package JetBrains
         run: just jetbrains-build
 
@@ -233,6 +236,7 @@ jobs:
             warm-burnout-obsidian.zip
             warm-burnout-emacs.zip
             warm-burnout-opencode.json
+            warm-burnout-polytoken.yaml
             jetbrains/warm-burnout-theme.jar
 
       - name: Publish to JetBrains Marketplace

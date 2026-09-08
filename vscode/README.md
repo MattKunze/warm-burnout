@@ -143,6 +143,7 @@ Then select **Warm Burnout Dark** or **Warm Burnout Light** with `Cmd+K Cmd+T` (
 - [Obsidian](https://community.obsidian.md/themes/warm-burnout)
 - [Emacs](https://github.com/felipefdl/warm-burnout/tree/main/emacs)
 - [OpenCode](https://github.com/felipefdl/warm-burnout/tree/main/opencode)
+- [Polytoken](https://github.com/felipefdl/warm-burnout/tree/main/polytoken)
 
 ## License
 
